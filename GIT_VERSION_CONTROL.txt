@@ -1,0 +1,169 @@
+===== GIT VERSION CONTROL =======
+
+1.git --version
+- in cmd 
+
+2.git config --global user.name "Sudhir-Kanani"
+- set user name
+
+3. git config --global user.email "kananisudhir705511@gmail.com"
+- set user email
+
+4.git config --global --edit
+-edit user name and email
+
+5. git config credential.username "Sudhir-Kanani"
+-reset username in system if old is exit
+
+========================================================================================================================================================
+====== In Studio =========
+1.git init
+-make your project to git repository
+
+2.git status
+- recent changes in repository like add, delete or modify files
+
+3.git add sum.java
+- add file in staging area (working directory -> git add -> staging area -> git commit -> repository)
+
+4.git commit -m "intit commit"
+-commit code with message "init commit"
+
+5.git log
+-show previus all commit
+
+6.git add .
+- add all chnages file in repository staging area
+
+7.git checkout <Has Code/branch name>
+- switch to previus changes or commit
+
+8.git checkout master
+- goto current commit or master 
+
+9.git branch
+-show all branch
+
+10.git branch dev
+-create new dev branch
+
+11.git checkout dev
+-Switched to branch 'dev'
+
+12.git checkout -b sk/multiply (create new branch and checkout using -b)
+-Switched to a new branch 'sk/multiply'
+
+13.git merge sk/multiply (command from parent branch)
+-merge branch with parent branch dev
+
+14.touch.gitignore
+-ingore file form git
+
+14.1. git branch -d BRANCHNAME
+- delete branch in local
+
+14.2. git push origin --delete BRANCHNAME
+- delete branch in gitLab
+
+========================================================================================================================================================
+----------crete repo in git -------------
+=> git remote add origin https://github.com/Tech-Ads/test_repo.git
+
+15.git remote -v
+-check yout remote repo 
+
+16.git branch -M master
+
+17.git push -u origin master
+-push code in master origin
+
+18.git remote set-url origin git@bitbucket.org:tutorials/tutorials.git
+-Update the remote URL with git remote
+
+
+========================================================================================================================================================
+----------TAGs in git -------------------
+
+1. git tag v1.0 (local)
+- Create Tag v1.0
+
+2. git tag  (local)
+- Show all tags
+
+3. git tag -a v1.1 -m "tag for release v1.1"  (local)
+- Create annotated tag with msg
+
+4. git push origin v1.0
+- push v1.0 tag in repository
+
+5. git push --tags
+- Push All tags in repository
+
+6. git tag -d v1.0(local)
+- delete v1.0 tag
+
+7. git push origin -d v1.0 v1.1
+- delete both tag form repository
+
+========================================================================================================================================================
+----------Fetch & pull in git -------------------
+
+1. git fetch
+- fetch chnages from repo and save in local repo it allow review changes and merge manually
+
+2. git pull
+- fetch + merge automatically, it's not allow to review chnages merge local directory directory
+
+
+========================================================================================================================================================
+----------Cherry-Pick in git -------------------
+
+1. git cherry-pick commit_id (apply from destination branch)
+- choose a single commit form one branch and apply into another
+
+========================================================================================================================================================
+---------- Reset, Revert, and Checkout in git -------------------
+
+1. git checkout <file name>
+- used to revert changes which have not been add Or pushed yet from local directory
+
+2. get reset <file name>
+- used to remove changes from staging area
+
+3. 	git reset head~1/2/3
+- you can only remove those commit which are recently added
+- you can not remove specific commit using commit id
+- you can only remove commit from local
+- it have three mode (Soft, Mixed, Hard)
+
+3.1 git reset Soft
+	- it will only remove recent commit
+	- it will not remove chnagesfrom staging area
+	- git reset --sort head~1/2/3
+
+3.2 git reset Mixed
+	- it will remove local recent commit & remove changes from staging area
+	- it is defult mode of reset
+	- git reset --mixed head~1/2/3 OR git reset head~1/2/3
+	
+3.3 git reset Hard
+	- it will remove local recent commit, remove changes form staging area & alos remove changes from working directory
+	- git reset --hard head~1/2/3
+
+4. git revert
+- used to revert changes the did on specific commit
+- it will not affect to past comment history
+- git revert <commit_id>
+
+========================================================================================================================================================
+======= open source contribution ============
+- fork 
+- clone - edit - push
+- pull request
+- merge
+
+
+========================= YOU TUBE0 =========================
+
+1. https://www.youtube.com/watch?v=PJ_leJJLuaM&list=PL_OdF9Z6GmVaZoIcWT0NDWJwUa-JbKWYm&index=1
+2. https://www.youtube.com/watch?v=uaeKhfhYE0U

@@ -3,16 +3,16 @@
 1.git --version
 - in cmd 
 
-2.git config --global user.name "Sudhir-Kanani"
+2.git config --global user.name "YOUR_USERNAME"
 - set user name
 
-3. git config --global user.email "kananisudhir705511@gmail.com"
+3. git config --global user.email "YOUR_EMAIL"
 - set user email
 
 4.git config --global --edit
 -edit user name and email
 
-5. git config credential.username "Sudhir-Kanani"
+5. git config credential.username "YOUR_USERNAME"
 -reset username in system if old is exit
 
 ========================================================================================================================================================
@@ -67,7 +67,7 @@
 
 ========================================================================================================================================================
 ----------crete repo in git -------------
-=> git remote add origin https://github.com/Tech-Ads/test_repo.git
+=> git remote add origin https://github.com/test_repo.git
 
 15.git remote -v
 -check yout remote repo 
@@ -77,7 +77,7 @@
 17.git push -u origin master
 -push code in master origin
 
-18.git remote set-url origin git@bitbucket.org:tutorials/tutorials.git
+18.git remote set-url origin git@bitbucket.org:tutorials/ex.git
 -Update the remote URL with git remote
 
 
